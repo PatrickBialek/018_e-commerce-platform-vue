@@ -21,6 +21,7 @@ export const updateProductAmount = (state, {
 }) => {
 	const productToUpdate = state.shopingCard.products.find(product => product.id == productId);
 	productToUpdate.amount = productToUpdate.amount + by;
+	window.localStorage.setItem("products", JSON.stringify(state.shopingCard.products));
 }
 
 export const updateTotalPrice = (state, price) => {
