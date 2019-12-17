@@ -1,0 +1,30 @@
+// Variables
+$black: #000;
+$gray-light: #868686;
+$red: #c21300;
+$white: #fff;
+
+// Breakpoints
+@mixin smallScreen {
+	@media (max-width: 1250px) {
+		@content
+	}
+}
+
+;
+
+@mixin touchScreen {
+	@media (max-width: 900px) {
+		@content
+	}
+}
+
+;
+
+@mixin mobileScreen {
+	@media (max-width: 600px) {
+		@content
+	}
+}
+
+;
